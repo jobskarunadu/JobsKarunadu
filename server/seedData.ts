@@ -1,0 +1,1038 @@
+import { Category, Job, JobSource } from '../src/types';
+
+export const INITIAL_CATEGORIES: Category[] = [
+  {
+    id: 'software-development',
+    name: 'Software Development',
+    slug: 'software-development',
+    icon_name: 'Code2',
+    description: 'Backend, Frontend, Full-stack, and Systems Engineering jobs'
+  },
+  {
+    id: 'ai-ml',
+    name: 'AI / ML',
+    slug: 'ai-ml',
+    icon_name: 'Cpu',
+    description: 'Machine Learning, Deep Learning, NLP, and AI Research roles'
+  },
+  {
+    id: 'data-analyst',
+    name: 'Data Analyst',
+    slug: 'data-analyst',
+    icon_name: 'BarChart3',
+    description: 'Business Intelligence, SQL, Tableau, and Data Analytics'
+  },
+  {
+    id: 'data-science',
+    name: 'Data Science',
+    slug: 'data-science',
+    icon_name: 'Database',
+    description: 'Statistical Modeling, Predictive Analytics, and Big Data'
+  },
+  {
+    id: 'web-development',
+    name: 'Web Development',
+    slug: 'web-development',
+    icon_name: 'Globe',
+    description: 'React, Vue, Node.js, Next.js, and Modern Web Tech'
+  },
+  {
+    id: 'android-development',
+    name: 'Android Development',
+    slug: 'android-development',
+    icon_name: 'Smartphone',
+    description: 'Kotlin, Android SDK, Compose, and Mobile Applications'
+  },
+  {
+    id: 'qa-testing',
+    name: 'QA / Testing',
+    slug: 'qa-testing',
+    icon_name: 'CheckSquare',
+    description: 'Manual & Automation Testing, Cypress, Selenium, SDET'
+  },
+  {
+    id: 'cybersecurity',
+    name: 'Cybersecurity',
+    slug: 'cybersecurity',
+    icon_name: 'ShieldCheck',
+    description: 'Security Operations, Penetration Testing, Cloud Security'
+  },
+  {
+    id: 'ui-ux',
+    name: 'UI/UX Design',
+    slug: 'ui-ux',
+    icon_name: 'Palette',
+    description: 'Product Design, Wireframing, Figma, User Research'
+  },
+  {
+    id: 'digital-marketing',
+    name: 'Digital Marketing',
+    slug: 'digital-marketing',
+    icon_name: 'TrendingUp',
+    description: 'SEO, Content Strategy, Performance Marketing, Social'
+  },
+  {
+    id: 'finance',
+    name: 'Finance & Accounts',
+    slug: 'finance',
+    icon_name: 'DollarSign',
+    description: 'Financial Analyst, Auditing, FinTech, and Accounting'
+  },
+  {
+    id: 'other',
+    name: 'Other Roles',
+    slug: 'other',
+    icon_name: 'Briefcase',
+    description: 'Operations, HR, Customer Success, and General Tech'
+  }
+];
+
+export const INITIAL_SOURCES: JobSource[] = [
+  {
+    id: 'upwork',
+    name: 'Upwork',
+    domain: 'upwork.com',
+    badge_color: '#14a800',
+    badge_bg: '#e8f7e8',
+    logo_url: 'https://www.upwork.com/favicon.ico'
+  },
+  {
+    id: 'fiverr',
+    name: 'Fiverr',
+    domain: 'fiverr.com',
+    badge_color: '#1dbf73',
+    badge_bg: '#e9f8f1',
+    logo_url: 'https://www.fiverr.com/favicon.ico'
+  },
+  {
+    id: 'freelancer',
+    name: 'Freelancer',
+    domain: 'freelancer.com',
+    badge_color: '#29b2fe',
+    badge_bg: '#eaf7ff',
+    logo_url: 'https://www.freelancer.com/favicon.ico'
+  },
+  {
+    id: 'contra',
+    name: 'Contra',
+    domain: 'contra.com',
+    badge_color: '#000000',
+    badge_bg: '#f4f4f5',
+    logo_url: 'https://contra.com/favicon.ico'
+  },
+  {
+    id: 'toptal',
+    name: 'Toptal',
+    domain: 'toptal.com',
+    badge_color: '#204ecf',
+    badge_bg: '#e9eefb',
+    logo_url: 'https://www.toptal.com/favicon.ico'
+  },
+  {
+    id: 'guru',
+    name: 'Guru',
+    domain: 'guru.com',
+    badge_color: '#4b9845',
+    badge_bg: '#edf5ec',
+    logo_url: 'https://www.guru.com/favicon.ico'
+  },
+  {
+    id: 'linkedin',
+    name: 'LinkedIn',
+    domain: 'linkedin.com',
+    badge_color: '#0a66c2',
+    badge_bg: '#e8f3fc',
+    logo_url: 'https://cdn-icons-png.flaticon.com/512/174/174857.png'
+  },
+  {
+    id: 'naukri',
+    name: 'Naukri',
+    domain: 'naukri.com',
+    badge_color: '#275df5',
+    badge_bg: '#edf2fe',
+    logo_url: 'https://static.naukimg.com/s/4/100/i/naukri_Logo.png'
+  },
+  {
+    id: 'indeed',
+    name: 'Indeed',
+    domain: 'indeed.com',
+    badge_color: '#2164f3',
+    badge_bg: '#eff4ff',
+    logo_url: 'https://cdn-icons-png.flaticon.com/512/5968/5968841.png'
+  },
+  {
+    id: 'wellfound',
+    name: 'Wellfound',
+    domain: 'wellfound.com',
+    badge_color: '#ea4335',
+    badge_bg: '#fdeeed',
+    logo_url: 'https://wellfound.com/images/favicon.ico'
+  },
+  {
+    id: 'internshala',
+    name: 'Internshala',
+    domain: 'internshala.com',
+    badge_color: '#1295d8',
+    badge_bg: '#e8f5fb',
+    logo_url: 'https://internshala.com/favicon.ico'
+  },
+  {
+    id: 'foundit',
+    name: 'Foundit',
+    domain: 'foundit.in',
+    badge_color: '#6c25ff',
+    badge_bg: '#f1ebff',
+    logo_url: 'https://www.foundit.in/favicon.ico'
+  },
+  {
+    id: 'company-careers',
+    name: 'Company Career Page',
+    domain: 'careers.company.com',
+    badge_color: '#0f766e',
+    badge_bg: '#f0fdfa',
+    logo_url: ''
+  }
+];
+
+export const SAMPLE_JOBS: Job[] = [
+  {
+    id: 'job-1',
+    slug: 'junior-frontend-developer-react-freshers-bengaluru',
+    title: 'Junior Frontend Developer (React / Next.js) - Fresher Friendly',
+    company_name: 'PixelCraft Tech',
+    company_logo_url: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/pixelcraft',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+We are looking for an energetic Junior Frontend Developer to join our core web experience team. You will build high-performance, accessible UI components using React, TypeScript, and Tailwind CSS.
+
+#### Responsibilities:
+- Build responsive, mobile-first web applications using React and Next.js.
+- Collaborate with UI/UX designers to translate Figma prototypes into clean, maintainable code.
+- Optimize web performance, core web vitals, and asset loading.
+- Participate in code reviews and test writing using Jest and React Testing Library.
+
+#### Requirements & Eligibility:
+- Proficiency in JavaScript (ES6+), HTML5, CSS3, and React.
+- Familiarity with TypeScript and state management patterns.
+- Bachelor's degree in Computer Science, IT, or related fields (2024, 2025, 2026 batches welcome).
+- Git version control fundamentals.
+
+#### Benefits & Perks:
+- Hybrid working environment (2 days WFH / 3 days in office).
+- Health insurance & annual wellness allowance.
+- Learning stipend for tech certifications and conferences.`,
+    location: 'Bengaluru, India',
+    work_mode: 'hybrid',
+    employment_type: 'full_time',
+    experience: '0-1 years (Fresher)',
+    is_fresher: true,
+    salary_min: 600000,
+    salary_max: 900000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹6,00,000 - ₹9,00,000 / year',
+    skills: ['React', 'TypeScript', 'Next.js', 'Tailwind CSS', 'HTML5/CSS3', 'Git'],
+    category_id: 'web-development',
+    category_name: 'Web Development',
+    source_platform: 'LinkedIn',
+    original_url: 'https://www.linkedin.com/jobs/view/sample-junior-react-dev-bengaluru-101',
+    posted_date: '2026-08-18T10:00:00Z',
+    deadline: '2026-09-30T23:59:59Z',
+    created_at: '2026-08-18T10:00:00Z',
+    updated_at: '2026-08-18T10:00:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 42,
+    views_count: 189,
+    report_count: 0
+  },
+  {
+    id: 'job-2',
+    slug: 'graduate-software-engineer-backend-python-remote',
+    title: 'Graduate Software Engineer - Python / FastAPI (Remote)',
+    company_name: 'CloudScale Systems',
+    company_logo_url: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/cloudscale',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+CloudScale Systems is hiring entry-level backend software engineers for our global distributed systems team. Fully remote work available worldwide.
+
+#### Responsibilities:
+- Design, build, and maintain high-throughput REST APIs and microservices using Python and FastAPI.
+- Work with PostgreSQL, Redis, and message queues (RabbitMQ/Kafka).
+- Write automated unit tests and integration tests with pytest.
+- Containerize services with Docker and deploy using Kubernetes.
+
+#### Requirements:
+- Solid understanding of Data Structures, Algorithms, and Object-Oriented Programming.
+- Hands-on experience with Python 3, Django or FastAPI/Flask through projects or internships.
+- Basic knowledge of SQL relational databases and Git.
+- Strong problem-solving and English communication skills.`,
+    location: 'Remote (Global / India)',
+    work_mode: 'remote',
+    employment_type: 'full_time',
+    experience: '0-2 years (Entry Level)',
+    is_fresher: true,
+    salary_min: 800000,
+    salary_max: 1200000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹8,00,000 - ₹12,00,000 / year',
+    skills: ['Python', 'FastAPI', 'PostgreSQL', 'Docker', 'REST APIs', 'Git'],
+    category_id: 'software-development',
+    category_name: 'Software Development',
+    source_platform: 'Wellfound',
+    original_url: 'https://wellfound.com/jobs/sample-graduate-python-backend-202',
+    posted_date: '2026-08-19T08:30:00Z',
+    deadline: '2026-10-15T23:59:59Z',
+    created_at: '2026-08-19T08:30:00Z',
+    updated_at: '2026-08-19T08:30:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 78,
+    views_count: 310,
+    report_count: 0
+  },
+  {
+    id: 'job-3',
+    slug: 'junior-data-analyst-sql-powerbi-gurugram',
+    title: 'Junior Data Analyst - SQL & PowerBI / Tableau',
+    company_name: 'FinSight Analytics',
+    company_logo_url: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/finsight',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+FinSight Analytics is looking for a data enthusiast to join our decision science wing. You will work closely with stakeholders to uncover commercial growth opportunities and visualize KPIs.
+
+#### What you will do:
+- Extract, clean, and model structured data from enterprise databases using PostgreSQL and MySQL.
+- Build interactive executive dashboards in PowerBI, Tableau, or Metabase.
+- Conduct cohort analysis, churn prediction tracking, and A/B test statistical reviews.
+- Automate routine data processing workflows using Python (Pandas) and Excel macros.
+
+#### Qualifications:
+- Proficiency in complex SQL queries (Window functions, CTEs, Joins).
+- Experience creating dashboards in PowerBI or Tableau.
+- Strong numerical foundation and curiosity about consumer trends.`,
+    location: 'Gurugram, Haryana',
+    work_mode: 'onsite',
+    employment_type: 'full_time',
+    experience: '0-2 years',
+    is_fresher: true,
+    salary_min: 500000,
+    salary_max: 750000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹5,00,000 - ₹7,50,000 / year',
+    skills: ['SQL', 'PowerBI', 'Tableau', 'Excel', 'Python (Pandas)', 'Data Modeling'],
+    category_id: 'data-analyst',
+    category_name: 'Data Analyst',
+    source_platform: 'Naukri',
+    original_url: 'https://www.naukri.com/job-listings-sample-junior-data-analyst-303',
+    posted_date: '2026-08-16T14:15:00Z',
+    deadline: '2026-09-20T23:59:59Z',
+    created_at: '2026-08-16T14:15:00Z',
+    updated_at: '2026-08-16T14:15:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 34,
+    views_count: 145,
+    report_count: 0
+  },
+  {
+    id: 'job-4',
+    slug: 'machine-learning-engineer-llm-fine-tuning-remote',
+    title: 'AI / Machine Learning Engineer (LLMs & GenAI)',
+    company_name: 'NeuralPulse Labs',
+    company_logo_url: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/neuralpulse',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+Join NeuralPulse Labs to build production-grade agentic AI workflows and fine-tune open-weights models for enterprise search and summarization.
+
+#### Key Focus Areas:
+- Build RAG pipelines using LangChain / LlamaIndex, Vector Databases (Pinecone / Qdrant), and embedding models.
+- Fine-tune and evaluate LLMs with LoRA / QLoRA using PyTorch and Hugging Face Transformers.
+- Deploy low-latency model inference servers with vLLM and Triton.
+
+#### Minimum Qualifications:
+- 1-3 years of proven experience in Machine Learning / Deep Learning.
+- Strong Python programming and experience with PyTorch.
+- Knowledge of Vector Search, Embeddings, and Agent architecture.`,
+    location: 'Remote (US & India Timezones)',
+    work_mode: 'remote',
+    employment_type: 'full_time',
+    experience: '1-3 years',
+    is_fresher: false,
+    salary_min: 1500000,
+    salary_max: 2400000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹15,00,000 - ₹24,00,000 / year',
+    skills: ['PyTorch', 'Python', 'LLMs', 'LangChain', 'Vector DB', 'Hugging Face'],
+    category_id: 'ai-ml',
+    category_name: 'AI / ML',
+    source_platform: 'Company Career Page',
+    original_url: 'https://careers.example.com/neuralpulse/ml-engineer-404',
+    posted_date: '2026-08-20T09:00:00Z',
+    deadline: '2026-10-31T23:59:59Z',
+    created_at: '2026-08-20T09:00:00Z',
+    updated_at: '2026-08-20T09:00:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 95,
+    views_count: 420,
+    report_count: 0
+  },
+  {
+    id: 'job-5',
+    slug: 'software-development-intern-summer-2026-hyderabad',
+    title: 'Software Development Engineering Intern (Summer 2026)',
+    company_name: 'Apex Infotech',
+    company_logo_url: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/apex',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+6-month paid internship opportunity for passionate undergraduate/postgraduate engineering students with high conversion to full-time SDE role.
+
+#### What you'll experience:
+- Pair with senior engineers to build cloud microservices in Java / Go.
+- Gain hands-on exposure to CI/CD pipelines, unit testing, and AWS infrastructure.
+- Monthly stipend of ₹35,000 + MacBook Pro provided + pre-placement offer (PPO) opportunities based on performance.
+
+#### Requirements:
+- Currently enrolled in 3rd or 4th year B.Tech/B.E/MCA in Computer Science or related branch.
+- Good problem solving in Java, C++, or Python.
+- Eagerness to learn and take ownership.`,
+    location: 'Hyderabad, Telangana',
+    work_mode: 'hybrid',
+    employment_type: 'internship',
+    experience: '0 years (Student / Intern)',
+    is_fresher: true,
+    salary_min: 35000,
+    salary_max: 40000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹35,000 - ₹40,000 / month stipend (PPO eligible)',
+    skills: ['Java', 'C++', 'Data Structures', 'Algorithms', 'SQL', 'Git'],
+    category_id: 'software-development',
+    category_name: 'Software Development',
+    source_platform: 'Internshala',
+    original_url: 'https://internshala.com/internship/detail/sample-apex-sde-intern-505',
+    posted_date: '2026-08-17T11:00:00Z',
+    deadline: '2026-09-15T23:59:59Z',
+    created_at: '2026-08-17T11:00:00Z',
+    updated_at: '2026-08-17T11:00:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 112,
+    views_count: 512,
+    report_count: 0
+  },
+  {
+    id: 'job-6',
+    slug: 'ui-ux-designer-figma-mobile-web-mumbai',
+    title: 'Associate UI/UX Product Designer',
+    company_name: 'Vivid Studio',
+    company_logo_url: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/vivid',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+Vivid Studio is searching for an Associate UI/UX Designer who loves crafting intuitive user journeys and beautiful design systems.
+
+#### Responsibilities:
+- Create wireframes, user journeys, interaction flows, and high-fidelity prototypes in Figma.
+- Collaborate with frontend developers to ensure design fidelity in production.
+- Conduct usability testing sessions and gather user feedback.
+
+#### Requirements:
+- Portfolio demonstrating real design projects, case studies, or design sprint concepts.
+- Mastery of Figma (components, autolayout, prototyping).
+- Understanding of design systems and typography hierarchies.`,
+    location: 'Mumbai, Maharashtra',
+    work_mode: 'hybrid',
+    employment_type: 'full_time',
+    experience: '1-3 years',
+    is_fresher: false,
+    salary_min: 700000,
+    salary_max: 1000000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹7,00,000 - ₹10,00,000 / year',
+    skills: ['Figma', 'UI Design', 'UX Research', 'Design Systems', 'Prototyping', 'Wireframing'],
+    category_id: 'ui-ux',
+    category_name: 'UI/UX Design',
+    source_platform: 'LinkedIn',
+    original_url: 'https://www.linkedin.com/jobs/view/sample-uiux-designer-mumbai-606',
+    posted_date: '2026-08-15T09:45:00Z',
+    deadline: '2026-09-25T23:59:59Z',
+    created_at: '2026-08-15T09:45:00Z',
+    updated_at: '2026-08-15T09:45:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 29,
+    views_count: 118,
+    report_count: 0
+  },
+  {
+    id: 'job-7',
+    slug: 'qa-automation-engineer-selenium-cypress-pune',
+    title: 'QA Automation Engineer (Cypress / Playwright / API)',
+    company_name: 'TestShield Solutions',
+    company_logo_url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/testshield',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+We are looking for a QA Automation Engineer to ensure zero-defect software releases across our SaaS products.
+
+#### Responsibilities:
+- Design, write, and execute automated regression test suites using Cypress or Playwright.
+- Test RESTful APIs and GraphQL endpoints with Postman and Newman.
+- Integrate tests into GitHub Actions CI/CD pipelines.
+
+#### Requirements:
+- 1-3 years in automated software testing.
+- Strong scripting skills in JavaScript/TypeScript or Python.
+- Knowledge of bug tracking tools like Jira and version control with Git.`,
+    location: 'Pune, Maharashtra',
+    work_mode: 'remote',
+    employment_type: 'full_time',
+    experience: '1-3 years',
+    is_fresher: false,
+    salary_min: 650000,
+    salary_max: 950000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹6,50,000 - ₹9,50,000 / year',
+    skills: ['Cypress', 'Playwright', 'Postman', 'JavaScript', 'CI/CD', 'API Testing'],
+    category_id: 'qa-testing',
+    category_name: 'QA / Testing',
+    source_platform: 'Foundit',
+    original_url: 'https://www.foundit.in/job/sample-qa-automation-pune-707',
+    posted_date: '2026-08-14T12:00:00Z',
+    deadline: '2026-09-18T23:59:59Z',
+    created_at: '2026-08-14T12:00:00Z',
+    updated_at: '2026-08-14T12:00:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 19,
+    views_count: 94,
+    report_count: 0
+  },
+  {
+    id: 'job-8',
+    slug: 'junior-android-developer-kotlin-compose-noida',
+    title: 'Junior Android Developer (Kotlin & Jetpack Compose)',
+    company_name: 'AppMorph Labs',
+    company_logo_url: 'https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/appmorph',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+AppMorph Labs is hiring a Junior Android Developer to build next-generation mobile applications for over 2 million active users.
+
+#### Responsibilities:
+- Build native Android applications in Kotlin using modern Jetpack Compose architecture.
+- Integrate REST APIs using Retrofit and Coroutines/Flow.
+- Implement offline caching with Room Database.
+
+#### Requirements:
+- 0-2 years of Android development experience with published apps or GitHub demo projects.
+- Solid understanding of Kotlin, MVVM architecture, and Coroutines.
+- Familiarity with Google Material Design 3 guidelines.`,
+    location: 'Noida, Uttar Pradesh',
+    work_mode: 'hybrid',
+    employment_type: 'full_time',
+    experience: '0-2 years',
+    is_fresher: true,
+    salary_min: 550000,
+    salary_max: 850000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹5,50,000 - ₹8,50,000 / year',
+    skills: ['Kotlin', 'Android SDK', 'Jetpack Compose', 'Coroutines', 'Room DB', 'Retrofit'],
+    category_id: 'android-development',
+    category_name: 'Android Development',
+    source_platform: 'Indeed',
+    original_url: 'https://www.indeed.com/viewjob?jk=sample-android-kotlin-808',
+    posted_date: '2026-08-12T16:30:00Z',
+    deadline: '2026-09-30T23:59:59Z',
+    created_at: '2026-08-12T16:30:00Z',
+    updated_at: '2026-08-12T16:30:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 38,
+    views_count: 160,
+    report_count: 0
+  },
+  {
+    id: 'job-9',
+    slug: 'cybersecurity-analyst-soc-l1-chennai',
+    title: 'Cybersecurity Analyst (SOC Tier 1 / SIEM)',
+    company_name: 'Fortress Cyber Guard',
+    company_logo_url: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/fortress',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+We are expanding our 24/7 Security Operations Center (SOC). Great opportunity for graduates with networking/security certifications (CompTIA Security+, CEH, CCNA).
+
+#### Responsibilities:
+- Monitor security telemetry feeds from Splunk, Microsoft Sentinel, and CrowdStrike EDR.
+- Triage suspicious alerts, phishing emails, and anomalous network traffic.
+- Document incident tickets and follow escalation playbooks.
+
+#### Requirements:
+- Degree in Computer Science, Cyber Security, or equivalent.
+- Knowledge of TCP/IP networking, OSI model, and common attack vectors (OWASP Top 10).`,
+    location: 'Chennai, Tamil Nadu',
+    work_mode: 'onsite',
+    employment_type: 'full_time',
+    experience: '0-2 years',
+    is_fresher: true,
+    salary_min: 500000,
+    salary_max: 750000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹5,00,000 - ₹7,50,000 / year',
+    skills: ['SIEM (Splunk)', 'Network Security', 'Wireshark', 'SOC Operations', 'Incident Response'],
+    category_id: 'cybersecurity',
+    category_name: 'Cybersecurity',
+    source_platform: 'Naukri',
+    original_url: 'https://www.naukri.com/job-listings-sample-soc-analyst-chennai-909',
+    posted_date: '2026-08-11T07:15:00Z',
+    deadline: '2026-09-12T23:59:59Z',
+    created_at: '2026-08-11T07:15:00Z',
+    updated_at: '2026-08-11T07:15:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 44,
+    views_count: 172,
+    report_count: 0
+  },
+  {
+    id: 'job-10',
+    slug: 'junior-financial-analyst-fintech-bengaluru',
+    title: 'Junior Financial Analyst (FinTech & Modeling)',
+    company_name: 'Apex Capital Ventures',
+    company_logo_url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/apexcapital',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+Assist venture partners and portfolio founders with financial valuation modeling, unit economics analysis, and investor reporting.
+
+#### Responsibilities:
+- Build 3-statement financial models and scenario analyses in Excel.
+- Benchmark startup valuations, burn rates, and CAC/LTV metrics.
+- Prepare presentation decks for quarterly board meetings.
+
+#### Qualifications:
+- B.Com / BBA / CA Inter / CFA Level 1 or equivalent finance background.
+- High proficiency with advanced Excel (financial formulas, VLOOKUP/XLOOKUP, pivot tables).`,
+    location: 'Bengaluru, Karnataka',
+    work_mode: 'hybrid',
+    employment_type: 'full_time',
+    experience: '0-2 years',
+    is_fresher: true,
+    salary_min: 650000,
+    salary_max: 900000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹6,50,000 - ₹9,00,000 / year',
+    skills: ['Financial Modeling', 'Excel', 'Valuation', 'Accounting', 'FinTech'],
+    category_id: 'finance',
+    category_name: 'Finance & Accounts',
+    source_platform: 'LinkedIn',
+    original_url: 'https://www.linkedin.com/jobs/view/sample-financial-analyst-1010',
+    posted_date: '2026-08-10T15:00:00Z',
+    deadline: '2026-09-28T23:59:59Z',
+    created_at: '2026-08-10T15:00:00Z',
+    updated_at: '2026-08-10T15:00:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 22,
+    views_count: 89,
+    report_count: 0
+  },
+  {
+    id: 'job-11',
+    slug: 'digital-marketing-executive-seo-sem-remote',
+    title: 'Growth & Digital Marketing Executive (SEO / SEM / Meta Ads)',
+    company_name: 'OmniReach Digital',
+    company_logo_url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/omnireach',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+Manage and optimize paid search campaigns (Google Ads) and organic search rankings for fast-growing B2B brands.
+
+#### Responsibilities:
+- Conduct keyword research and on-page/off-page SEO audits using Ahrefs / SEMrush.
+- Set up and monitor Google Search, Display, and Meta performance ad campaigns.
+- Report on conversion rates, ROAS, and cost-per-acquisition.`,
+    location: 'Remote (India)',
+    work_mode: 'remote',
+    employment_type: 'full_time',
+    experience: '1-3 years',
+    is_fresher: false,
+    salary_min: 450000,
+    salary_max: 700000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹4,50,000 - ₹7,00,000 / year',
+    skills: ['SEO', 'Google Ads', 'Meta Ads', 'Google Analytics 4', 'Content Marketing', 'SEMrush'],
+    category_id: 'digital-marketing',
+    category_name: 'Digital Marketing',
+    source_platform: 'Indeed',
+    original_url: 'https://www.indeed.com/viewjob?jk=sample-digital-marketing-1111',
+    posted_date: '2026-08-08T10:00:00Z',
+    deadline: '2026-09-15T23:59:59Z',
+    created_at: '2026-08-08T10:00:00Z',
+    updated_at: '2026-08-08T10:00:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 18,
+    views_count: 76,
+    report_count: 0
+  },
+  {
+    id: 'job-13',
+    slug: 'fullstack-web-developer-intern-bengaluru',
+    title: 'Full Stack Web Development Intern (React & Node.js)',
+    company_name: 'Karunadu Tech Innovations',
+    company_logo_url: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/karunadutech',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+Join our agile product development team in Bengaluru for a 6-month hands-on internship working on real enterprise applications with modern TypeScript, React, and Node.js.
+
+#### What you will learn & build:
+- Build responsive components in React, Tailwind CSS, and REST API services with Express.
+- Work with relational PostgreSQL databases and Redis caching.
+- Participate in daily standups, code reviews, and Git flow workflows.
+- Performance-based Full-Time Pre-Placement Offer (PPO) opportunities.`,
+    location: 'Bengaluru, Karnataka',
+    work_mode: 'hybrid',
+    employment_type: 'internship',
+    experience: 'Fresher (Student / 0-1 Yr)',
+    is_fresher: true,
+    salary_min: 30000,
+    salary_max: 35000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹30,000 - ₹35,000 / month stipend (PPO Available)',
+    skills: ['React', 'Node.js', 'TypeScript', 'Tailwind CSS', 'PostgreSQL', 'Git'],
+    category_id: 'web-development',
+    category_name: 'Web Development',
+    source_platform: 'Internshala',
+    original_url: 'https://internshala.com/internship/detail/sample-karunadu-fullstack-intern-1313',
+    posted_date: '2026-08-20T11:00:00Z',
+    deadline: '2026-10-15T23:59:59Z',
+    created_at: '2026-08-20T11:00:00Z',
+    updated_at: '2026-08-20T11:00:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 56,
+    views_count: 240,
+    report_count: 0
+  },
+  {
+    id: 'job-14',
+    slug: 'ai-machine-learning-research-intern-bengaluru',
+    title: 'AI & Deep Learning Research Intern (Computer Vision / NLP)',
+    company_name: 'Silicon City AI Labs',
+    company_logo_url: 'https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/siliconcityai',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+Exciting paid internship for engineering students interested in generative AI, computer vision, and foundation models.
+
+#### Key Responsibilities:
+- Experiment with PyTorch models and Hugging Face pipelines for document OCR and text analysis.
+- Clean and preprocess multimodal datasets and benchmark model performance.
+- Work closely with senior research scientists and publish tech blog insights.`,
+    location: 'Bengaluru, Karnataka',
+    work_mode: 'onsite',
+    employment_type: 'internship',
+    experience: 'Fresher (Student / 0-1 Yr)',
+    is_fresher: true,
+    salary_min: 40000,
+    salary_max: 45000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹40,000 - ₹45,000 / month stipend',
+    skills: ['Python', 'PyTorch', 'Hugging Face', 'Computer Vision', 'NLP', 'Data Science'],
+    category_id: 'ai-ml',
+    category_name: 'AI / ML',
+    source_platform: 'LinkedIn',
+    original_url: 'https://www.linkedin.com/jobs/view/sample-ai-intern-bengaluru-1414',
+    posted_date: '2026-08-21T09:00:00Z',
+    deadline: '2026-10-20T23:59:59Z',
+    created_at: '2026-08-21T09:00:00Z',
+    updated_at: '2026-08-21T09:00:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 72,
+    views_count: 310,
+    report_count: 0
+  },
+  {
+    id: 'job-15',
+    slug: 'ui-ux-design-intern-mysuru-remote',
+    title: 'UI/UX & Product Design Intern (Figma & Prototyping)',
+    company_name: 'Mysuru Design Collective',
+    company_logo_url: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/mysurudesign',
+    description: `### [SAMPLE LISTING - FOR TESTING ONLY]
+Join a creative digital studio creating human-centric consumer apps and SaaS products.
+
+#### Responsibilities:
+- Design wireframes, user flows, and interactive prototypes using Figma.
+- Build and maintain component libraries and design tokens.
+- Assist in conducting usability surveys and competitive product audits.`,
+    location: 'Mysuru, Karnataka (Remote OK)',
+    work_mode: 'remote',
+    employment_type: 'internship',
+    experience: 'Fresher (Student / 0-1 Yr)',
+    is_fresher: true,
+    salary_min: 25000,
+    salary_max: 30000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹25,000 - ₹30,000 / month stipend',
+    skills: ['Figma', 'UI Design', 'Wireframing', 'Prototyping', 'Design Systems', 'User Research'],
+    category_id: 'ui-ux',
+    category_name: 'UI/UX Design',
+    source_platform: 'Wellfound',
+    original_url: 'https://wellfound.com/jobs/sample-mysuru-design-intern-1515',
+    posted_date: '2026-08-21T08:00:00Z',
+    deadline: '2026-09-30T23:59:59Z',
+    created_at: '2026-08-21T08:00:00Z',
+    updated_at: '2026-08-21T08:00:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 34,
+    views_count: 145,
+    report_count: 0
+  },
+  {
+    id: 'gig-1',
+    slug: 'freelance-react-nextjs-tailwind-developer-upwork',
+    title: 'Full Stack Next.js & Supabase SaaS MVP Builder (Fixed/Milestone)',
+    company_name: 'VentureScale Client',
+    company_logo_url: 'https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://upwork.com',
+    description: `### [FREELANCE CONTRACT - UPWORK VERIFIED]
+We are looking for a fast, proficient freelance full-stack developer to build an MVP for an AI-powered customer feedback aggregation dashboard.
+
+#### Scope of Work:
+- Build 8 responsive dashboard views in Next.js (App router), Tailwind CSS, and Shadcn UI.
+- Implement user authentication & database schemas using Supabase (PostgreSQL).
+- Integrate Stripe subscriptions webhook and OpenAI/Gemini summary API endpoints.
+- High code quality with clean git commits and milestone payouts.
+
+#### Requirements:
+- Proven Upwork or GitHub portfolio with completed web applications.
+- Strong proficiency with Next.js 14+, TypeScript, and Tailwind CSS.
+- Good English communication for async project coordination.`,
+    location: 'Remote (Worldwide / India)',
+    work_mode: 'remote',
+    employment_type: 'freelance',
+    experience: 'Freelancer (Portfolio based)',
+    is_fresher: false,
+    salary_min: 150000,
+    salary_max: 250000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹1,50,000 - ₹2,50,000 / project ($2,000 - $3,000)',
+    skills: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Supabase', 'Stripe'],
+    category_id: 'web-development',
+    category_name: 'Web Development',
+    source_platform: 'Upwork',
+    original_url: 'https://www.upwork.com/jobs/sample-freelance-nextjs-mvp-1616',
+    posted_date: '2026-08-22T06:00:00Z',
+    deadline: '2026-10-30T23:59:59Z',
+    created_at: '2026-08-22T06:00:00Z',
+    updated_at: '2026-08-22T06:00:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 88,
+    views_count: 360,
+    report_count: 0
+  },
+  {
+    id: 'gig-2',
+    slug: 'freelance-ui-ux-mobile-figma-designer-contra',
+    title: 'Mobile App UI/UX Redesign & Design System (Contra Freelance)',
+    company_name: 'FinFlow Studio',
+    company_logo_url: 'https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://contra.com',
+    description: `### [FREELANCE CONTRACT - CONTRA COMMISSION FREE]
+Looking for a top-tier UI/UX product designer on Contra to revamp our personal budgeting mobile application (iOS and Android).
+
+#### Deliverables:
+- Complete audit of existing user flows and friction points.
+- 25+ pixel-perfect high-fidelity screens in Figma with interactive prototyping.
+- Reusable component library adhering to Material 3 and Apple Human Interface Guidelines.
+- Hand-off documentation for Flutter and React Native engineers.`,
+    location: 'Remote',
+    work_mode: 'remote',
+    employment_type: 'freelance',
+    experience: 'Freelance Designer',
+    is_fresher: false,
+    salary_min: 120000,
+    salary_max: 180000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹1,20,000 - ₹1,80,000 / project ($1,500 - $2,200)',
+    skills: ['Figma', 'UI/UX Design', 'Mobile Design', 'Design Systems', 'Prototyping'],
+    category_id: 'ui-ux',
+    category_name: 'UI/UX Design',
+    source_platform: 'Contra',
+    original_url: 'https://contra.com/opportunity/sample-mobile-redesign-figma-1717',
+    posted_date: '2026-08-22T05:30:00Z',
+    deadline: '2026-10-15T23:59:59Z',
+    created_at: '2026-08-22T05:30:00Z',
+    updated_at: '2026-08-22T05:30:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 64,
+    views_count: 280,
+    report_count: 0
+  },
+  {
+    id: 'gig-3',
+    slug: 'freelance-python-automation-data-scraper-fiverr',
+    title: 'Python Web Scraping, ETL Pipeline & Data Extraction Specialist',
+    company_name: 'MarketData Pro Client',
+    company_logo_url: 'https://images.unsplash.com/photo-1542744094-3a31f272c490?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://fiverr.com',
+    description: `### [FREELANCE GIG - FIVERR PRO]
+Seeking a Python specialist to build scalable web scraping scripts and automated ETL data ingestion pipelines for real estate price tracking across 5 portals.
+
+#### Key Tasks:
+- Write robust scrapers using Playwright/Selenium and BeautifulSoup.
+- Bypass anti-bot protections with rotating proxies and user agents.
+- Clean and normalize extracted records and export to Google Sheets and PostgreSQL database.`,
+    location: 'Remote',
+    work_mode: 'remote',
+    employment_type: 'freelance',
+    experience: 'Freelance Scraper / Python Dev',
+    is_fresher: false,
+    salary_min: 50000,
+    salary_max: 90000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹50,000 - ₹90,000 / milestone',
+    skills: ['Python', 'Web Scraping', 'Playwright', 'Selenium', 'PostgreSQL', 'Pandas'],
+    category_id: 'data-analyst',
+    category_name: 'Data Analyst',
+    source_platform: 'Fiverr',
+    original_url: 'https://www.fiverr.com/sample-python-scraper-pro-1818',
+    posted_date: '2026-08-21T14:00:00Z',
+    deadline: '2026-09-30T23:59:59Z',
+    created_at: '2026-08-21T14:00:00Z',
+    updated_at: '2026-08-21T14:00:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 45,
+    views_count: 195,
+    report_count: 0
+  },
+  {
+    id: 'gig-4',
+    slug: 'freelance-senior-backend-engineer-toptal',
+    title: 'Senior Node.js & Microservices Architect (Hourly Freelance Contract)',
+    company_name: 'Global Fintech Network',
+    company_logo_url: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://toptal.com',
+    description: `### [FREELANCE HOURLY CONTRACT - TOPTAL EXCLUSIVE]
+High-paying freelance hourly engagement (20-30 hours/week) for an experienced backend engineer to optimize high-concurrency payment gateway microservices.
+
+#### Requirements:
+- 4+ years of backend development in Node.js / Go.
+- Experience with Redis cluster, Kafka event streaming, and PostgreSQL query profiling.
+- Flexible working hours with weekly milestone approvals.`,
+    location: 'Remote (Anywhere in India/Worldwide)',
+    work_mode: 'remote',
+    employment_type: 'freelance',
+    experience: 'Senior Freelance Consultant',
+    is_fresher: false,
+    salary_min: 250000,
+    salary_max: 400000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹2,50,000 - ₹4,00,000 / month ($40 - $65 / hr)',
+    skills: ['Node.js', 'Go', 'Microservices', 'Kafka', 'Redis', 'PostgreSQL'],
+    category_id: 'software-development',
+    category_name: 'Software Development',
+    source_platform: 'Toptal',
+    original_url: 'https://www.toptal.com/jobs/sample-senior-backend-freelance-1919',
+    posted_date: '2026-08-21T16:00:00Z',
+    deadline: '2026-10-31T23:59:59Z',
+    created_at: '2026-08-21T16:00:00Z',
+    updated_at: '2026-08-21T16:00:00Z',
+    status: 'published',
+    is_featured: true,
+    apply_clicks: 76,
+    views_count: 310,
+    report_count: 0
+  },
+  {
+    id: 'gig-5',
+    slug: 'freelance-seo-content-digital-marketer-freelancer',
+    title: 'SEO Content Strategist & Technical Content Writer (Freelancer.com)',
+    company_name: 'GrowthSpur Media',
+    company_logo_url: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://freelancer.com',
+    description: `### [FREELANCE PROJECT - FREELANCER.COM]
+Seeking a technical content writer and SEO specialist to write 12 in-depth SaaS tutorials, comparisons, and documentation articles for a developer tool.
+
+#### Deliverables:
+- 12 articles (1,500 - 2,000 words each) optimized for high-intent search keywords.
+- Proper Markdown formatting, code snippets, and custom diagrams.`,
+    location: 'Remote',
+    work_mode: 'remote',
+    employment_type: 'freelance',
+    experience: 'Freelance Writer',
+    is_fresher: false,
+    salary_min: 40000,
+    salary_max: 70000,
+    salary_currency: 'INR',
+    salary_period: 'month',
+    salary_text: '₹40,000 - ₹70,000 / project',
+    skills: ['SEO', 'Content Writing', 'Technical Writing', 'Markdown', 'Keyword Research'],
+    category_id: 'digital-marketing',
+    category_name: 'Digital Marketing',
+    source_platform: 'Freelancer',
+    original_url: 'https://www.freelancer.com/projects/sample-seo-tech-writer-2020',
+    posted_date: '2026-08-20T12:00:00Z',
+    deadline: '2026-09-25T23:59:59Z',
+    created_at: '2026-08-20T12:00:00Z',
+    updated_at: '2026-08-20T12:00:00Z',
+    status: 'published',
+    is_featured: false,
+    apply_clicks: 39,
+    views_count: 170,
+    report_count: 0
+  },
+  {
+    id: 'job-12',
+    slug: 'expired-sample-senior-systems-engineer',
+    title: 'Senior Systems Architect - Cloud Infrastructure (Archived/Expired Demo)',
+    company_name: 'Legacy Cloud Tech',
+    company_logo_url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=128&auto=format&fit=crop&q=80',
+    company_website: 'https://example.com/legacy',
+    description: `### [SAMPLE EXPIRED LISTING - FOR TESTING EXPIRATION LOGIC]
+This sample job has an expired deadline in the past (August 1, 2026) to test the automatic expiration filter. It only appears in the Admin Dashboard or when specifically querying expired listings.`,
+    location: 'Bengaluru, India',
+    work_mode: 'onsite',
+    employment_type: 'full_time',
+    experience: '5+ years',
+    is_fresher: false,
+    salary_min: 2500000,
+    salary_max: 3500000,
+    salary_currency: 'INR',
+    salary_period: 'year',
+    salary_text: '₹25,00,000 - ₹35,00,000 / year',
+    skills: ['AWS', 'Kubernetes', 'Terraform', 'System Architecture'],
+    category_id: 'software-development',
+    category_name: 'Software Development',
+    source_platform: 'LinkedIn',
+    original_url: 'https://www.linkedin.com/jobs/view/sample-expired-listing-1212',
+    posted_date: '2026-07-01T10:00:00Z',
+    deadline: '2026-08-01T23:59:59Z',
+    created_at: '2026-07-01T10:00:00Z',
+    updated_at: '2026-08-02T00:00:00Z',
+    status: 'expired',
+    is_featured: false,
+    apply_clicks: 14,
+    views_count: 65,
+    report_count: 0
+  }
+];
