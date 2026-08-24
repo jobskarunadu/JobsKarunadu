@@ -1,0 +1,6 @@
+{
+  "name": "JobsKarunadu - Verified Career & Job Opportunities Hub",
+  "description": "Verified job listings with direct application links, curated opportunities, and admin portal inspired by Karnataka's vibrant Yellow & Red heritage.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
