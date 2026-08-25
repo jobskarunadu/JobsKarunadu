@@ -1,0 +1,238 @@
+{
+  "jobs": [
+    {
+      "id": "job-1787676334995-456",
+      "slug": "software-development-engineer-mountblue-technologies-bengaluru-india",
+      "title": "Software Development Engineer",
+      "company_name": "MountBlue Technologies",
+      "company_logo_url": "",
+      "company_website": "",
+      "description": "MountBlue",
+      "location": "Bengaluru, India",
+      "work_mode": "onsite",
+      "employment_type": "full_time",
+      "experience": "0-1 years (Fresher)",
+      "is_fresher": true,
+      "salary_min": null,
+      "salary_max": null,
+      "salary_currency": "INR",
+      "salary_period": "year",
+      "salary_text": "4,20,000/yr",
+      "skills": [
+        "Java",
+        "JavaScript",
+        "Python",
+        "Ruby",
+        "PHP",
+        "C/C++"
+      ],
+      "category_id": "software-development",
+      "category_name": "Software Development",
+      "source_platform": "LinkedIn",
+      "original_url": "https://careers.mountblue.io/trainee",
+      "posted_date": "2026-08-25",
+      "deadline": null,
+      "created_at": "2026-08-25T16:45:34.996Z",
+      "updated_at": "2026-08-25T16:45:34.996Z",
+      "status": "published",
+      "is_featured": false,
+      "apply_clicks": 0,
+      "views_count": 0,
+      "report_count": 0
+    }
+  ],
+  "categories": [
+    {
+      "id": "software-development",
+      "name": "Software Development",
+      "slug": "software-development",
+      "icon_name": "Code2",
+      "description": "Backend, Frontend, Full-stack, and Systems Engineering jobs"
+    },
+    {
+      "id": "ai-ml",
+      "name": "AI / ML",
+      "slug": "ai-ml",
+      "icon_name": "Cpu",
+      "description": "Machine Learning, Deep Learning, NLP, and AI Research roles"
+    },
+    {
+      "id": "data-analyst",
+      "name": "Data Analyst",
+      "slug": "data-analyst",
+      "icon_name": "BarChart3",
+      "description": "Business Intelligence, SQL, Tableau, and Data Analytics"
+    },
+    {
+      "id": "data-science",
+      "name": "Data Science",
+      "slug": "data-science",
+      "icon_name": "Database",
+      "description": "Statistical Modeling, Predictive Analytics, and Big Data"
+    },
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "slug": "web-development",
+      "icon_name": "Globe",
+      "description": "React, Vue, Node.js, Next.js, and Modern Web Tech"
+    },
+    {
+      "id": "android-development",
+      "name": "Android Development",
+      "slug": "android-development",
+      "icon_name": "Smartphone",
+      "description": "Kotlin, Android SDK, Compose, and Mobile Applications"
+    },
+    {
+      "id": "qa-testing",
+      "name": "QA / Testing",
+      "slug": "qa-testing",
+      "icon_name": "CheckSquare",
+      "description": "Manual & Automation Testing, Cypress, Selenium, SDET"
+    },
+    {
+      "id": "cybersecurity",
+      "name": "Cybersecurity",
+      "slug": "cybersecurity",
+      "icon_name": "ShieldCheck",
+      "description": "Security Operations, Penetration Testing, Cloud Security"
+    },
+    {
+      "id": "ui-ux",
+      "name": "UI/UX Design",
+      "slug": "ui-ux",
+      "icon_name": "Palette",
+      "description": "Product Design, Wireframing, Figma, User Research"
+    },
+    {
+      "id": "digital-marketing",
+      "name": "Digital Marketing",
+      "slug": "digital-marketing",
+      "icon_name": "TrendingUp",
+      "description": "SEO, Content Strategy, Performance Marketing, Social"
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Accounts",
+      "slug": "finance",
+      "icon_name": "DollarSign",
+      "description": "Financial Analyst, Auditing, FinTech, and Accounting"
+    },
+    {
+      "id": "other",
+      "name": "Other Roles",
+      "slug": "other",
+      "icon_name": "Briefcase",
+      "description": "Operations, HR, Customer Success, and General Tech"
+    }
+  ],
+  "sources": [
+    {
+      "id": "upwork",
+      "name": "Upwork",
+      "domain": "upwork.com",
+      "badge_color": "#14a800",
+      "badge_bg": "#e8f7e8",
+      "logo_url": "https://www.upwork.com/favicon.ico"
+    },
+    {
+      "id": "fiverr",
+      "name": "Fiverr",
+      "domain": "fiverr.com",
+      "badge_color": "#1dbf73",
+      "badge_bg": "#e9f8f1",
+      "logo_url": "https://www.fiverr.com/favicon.ico"
+    },
+    {
+      "id": "freelancer",
+      "name": "Freelancer",
+      "domain": "freelancer.com",
+      "badge_color": "#29b2fe",
+      "badge_bg": "#eaf7ff",
+      "logo_url": "https://www.freelancer.com/favicon.ico"
+    },
+    {
+      "id": "contra",
+      "name": "Contra",
+      "domain": "contra.com",
+      "badge_color": "#000000",
+      "badge_bg": "#f4f4f5",
+      "logo_url": "https://contra.com/favicon.ico"
+    },
+    {
+      "id": "toptal",
+      "name": "Toptal",
+      "domain": "toptal.com",
+      "badge_color": "#204ecf",
+      "badge_bg": "#e9eefb",
+      "logo_url": "https://www.toptal.com/favicon.ico"
+    },
+    {
+      "id": "guru",
+      "name": "Guru",
+      "domain": "guru.com",
+      "badge_color": "#4b9845",
+      "badge_bg": "#edf5ec",
+      "logo_url": "https://www.guru.com/favicon.ico"
+    },
+    {
+      "id": "linkedin",
+      "name": "LinkedIn",
+      "domain": "linkedin.com",
+      "badge_color": "#0a66c2",
+      "badge_bg": "#e8f3fc",
+      "logo_url": "https://cdn-icons-png.flaticon.com/512/174/174857.png"
+    },
+    {
+      "id": "naukri",
+      "name": "Naukri",
+      "domain": "naukri.com",
+      "badge_color": "#275df5",
+      "badge_bg": "#edf2fe",
+      "logo_url": "https://static.naukimg.com/s/4/100/i/naukri_Logo.png"
+    },
+    {
+      "id": "indeed",
+      "name": "Indeed",
+      "domain": "indeed.com",
+      "badge_color": "#2164f3",
+      "badge_bg": "#eff4ff",
+      "logo_url": "https://cdn-icons-png.flaticon.com/512/5968/5968841.png"
+    },
+    {
+      "id": "wellfound",
+      "name": "Wellfound",
+      "domain": "wellfound.com",
+      "badge_color": "#ea4335",
+      "badge_bg": "#fdeeed",
+      "logo_url": "https://wellfound.com/images/favicon.ico"
+    },
+    {
+      "id": "internshala",
+      "name": "Internshala",
+      "domain": "internshala.com",
+      "badge_color": "#1295d8",
+      "badge_bg": "#e8f5fb",
+      "logo_url": "https://internshala.com/favicon.ico"
+    },
+    {
+      "id": "foundit",
+      "name": "Foundit",
+      "domain": "foundit.in",
+      "badge_color": "#6c25ff",
+      "badge_bg": "#f1ebff",
+      "logo_url": "https://www.foundit.in/favicon.ico"
+    },
+    {
+      "id": "company-careers",
+      "name": "Company Career Page",
+      "domain": "careers.company.com",
+      "badge_color": "#0f766e",
+      "badge_bg": "#f0fdfa",
+      "logo_url": ""
+    }
+  ],
+  "reports": [],
+  "last_updated": "2026-08-25T16:45:34.996Z"
+}
